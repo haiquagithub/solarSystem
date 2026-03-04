@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solar System</title>
+	<style>
+		body {
+			background-color: black;
+		}
+		.sun {
+			background-color: yellow;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -50px;
+			animation: spin 10s linear infinite;
+		}
+		.planet {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -50px;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			animation: orbit 5s linear infinite;
+		}
+		.mercury {
+			background-color: gray;
+			animation-duration: 2s;
+			animation-delay: 0s;
+		}
+		.venus {
+			background-color: orange;
+			animation-duration: 3s;
+			animation-delay: 1s;
+		}
+		.earth {
+			background-color: blue;
+			animation-duration: 4s;
+			animation-delay: 2s;
+		}
+		.mars {
+			background-color: red;
+			animation-duration: 5s;
+			animation-delay: 3s;
+		}
+		.jupiter {
+			background-color: brown;
+			animation-duration: 6s;
+			animation-delay: 4s;
+		}
+		.saturn {
+			background-color: #f7d68a;
+			animation-duration: 7s;
+			animation-delay: 5s;
+		}
+		.uranus {
+			background-color: #bde7ff;
+			animation-duration: 8s;
+			animation-delay: 6s;
+		}
+		.neptune {
+			background-color: #8494ff;
+			animation-duration: 9s;
+			animation-delay: 7s;
+		}
+		@keyframes orbit {
+			from {
+				transform: rotate(0deg) translateX(100px) rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg) translateX(100px) rotate(-360deg);
+			}
+		}
+		@keyframes spin {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="sun"></div>
+	<div class="planet mercury"></div>
+	<div class="planet venus"></div>
+	<div class="planet earth"></div>
+	<div class="planet mars"></div>
+	<div class="planet jupiter"></div>
+	<div class="planet saturn"></div>
+	<div class="planet uranus"></div>
+	<div class="planet neptune"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
